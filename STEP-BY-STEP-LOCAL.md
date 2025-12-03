@@ -69,8 +69,8 @@ aws configure set aws_session_token "SEU_SESSION_TOKEN_AQUI" --profile fiapaws
 aws sts get-caller-identity --profile fiapaws
 
 # 4. Criar bucket S3 (nome único)
-export BUCKET_NAME="fiap-cicd-demo-$(date +%s)-$(whoami)"
-aws s3 mb s3://$BUCKET_NAME --profile fiapaws
+export BUCKET_NAME="fiap-cicd-demo-$(date +%s)"
+aws s3 mb s3://$BUCKET_NAME --profile fiapaws --region us-east-1
 
 # 5. Configurar website hosting
 aws s3 website s3://$BUCKET_NAME \
