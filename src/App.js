@@ -20,7 +20,7 @@ function App() {
         
         <div className="main-content">
           <h2>DevOps e Arquitetura Cloud</h2>
-          <h3>Demo de CI/CD com GitHub Actions</h3>
+          <h3>Demo de CI/CD com GitHub Actions -</h3>
           
           <div className="demo-info">
             <div className="info-card">
